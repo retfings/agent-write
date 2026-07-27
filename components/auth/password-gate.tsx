@@ -2,7 +2,7 @@
 
 import { useState, useEffect, type FC, type ReactNode } from "react";
 
-const CORRECT_PASSWORD = "QW!#1234sa";
+const CORRECT_PASSWORD = "QW!#12sa";
 const STORAGE_KEY = "auth_verified";
 
 export const PasswordGate: FC<{ children: ReactNode }> = ({ children }) => {
