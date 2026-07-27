@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently -n frontend,backend -c cyan,magenta \"pnpm dev:frontend\" \"pnpm dev:backend\"",
-    "dev:frontend": "next dev --turbopack",
+    "dev:frontend": "next dev --turbopack --hostname 0.0.0.0 -p 85",
     "dev:backend": "langgraphjs dev --host 0.0.0.0",
     "build": "next build",
     "start": "next start",
